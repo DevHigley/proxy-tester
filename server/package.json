@@ -1,0 +1,17 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"author": "Devin Higley",
+	"license": "MIT",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"@devhigley/parse-proxy": "^1.0.3",
+		"@devhigley/test-proxy": "^1.1.1",
+		"express": "^4.17.1",
+		"socket.io": "^4.0.1"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "proxy-tester",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Devin Higley",
+	"license": "MIT",
+	"scripts": {
+		"buildClient": "cd client && npm run build",
+		"installServer": "cd server && npm install",
+		"installClient": "cd client && npm install --also=dev",
+		"heroku-prebuild": "npm run installClient && npm run installServer",
+		"heroku-postbuild": "cd client && npm run build",
+		"start": "cd server && npm run start",
+		"test": "set NODE_ENV=production&& yarn heroku-prebuild && yarn heroku-postbuild && yarn start"
+	}
+}

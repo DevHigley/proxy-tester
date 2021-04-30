@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"jsx": "react",
+		"allowJs": true,
+		"target": "es5",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"skipLibCheck": true,
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src", "../Import.tsx"],
+	"exclude": ["node_modules"]
+}
